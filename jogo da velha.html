@@ -1,0 +1,124 @@
+<html>
+	<body bgcolor="#ffffff" background="imagens/velha.jpg">
+		<title>
+			Jogo da Velha
+		</title>
+	</body>
+	<link rel="stylesheet"
+		type="text/css"
+		href="css/style.css">
+	<script src="jogo da velha.js"> </script>
+	<table width="800" height="400" align="center" >
+		<tr>
+			<td>
+				<table width="100%" height="100%"  bgcolor="#ffffff" class="borda">
+					<tr height="20%">
+						<td width="100%" colspan="2" align="center" class="texto"> <!--LINHA 1-->
+							<table width="100%" height="100%" >
+								<tr>
+									<td  width="33%" align="center">
+										<img src="imagens/branco.png" width="40" height="50" id="10" onclick="Jogo(this.id)">
+									</td>
+									<td width="33%" align="center" class="texto">
+										<p>JOGO DA VELHA</P>
+									</td>
+									<td width="33%"  align="center">
+										<img src="imagens/branco.png" width="40" height="50" id="11" onclick="Jogo(this.id)">
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height="10%">
+						<td width="20%" align="center" class="subtitulo"> <!--LINHA 2-->
+							<p> MENU </p>
+						</td>
+						<td width="60%" rowspan="2"> <!--COLUNA 2-->
+							<table width="100%" height="100%" bgcolor="#ffffff">
+								<tr height="100%">
+									<td width="100%">
+										<table width="50%" height="90%" align="center" class="bordaCor"> <!--JOGO DA VELHA-->
+											<tr height="30%"> <!--LINHA 1-->
+												<td width="16%" bgcolor=#ffffff align="center"> <!--COLUNA 1-->
+													<img src="imagens/branco.png" width="40" height="50" id="0" onclick="Jogo(this.id)">
+												</td>
+												<td width="16%" bgcolor=#ffffff align="center"> <!--COLUNA 2-->
+													<img src="imagens/branco.png" width="40" height="50" id="1" onclick="Jogo(this.id)">
+												</td>
+												<td width="16%" bgcolor=#ffffff align="center" > <!--COLUNA 3-->
+													<img src="imagens/branco.png" width="40" height="50" id="2" onclick="Jogo(this.id)">
+												</td>
+											</tr>
+											<tr height="30%"> <!--LINHA 2-->
+												<td width="16%" bgcolor=#ffffff align="center"> <!--COLUNA 1-->
+													<img src="imagens/branco.png" width="40" height="50" id="3" onclick="Jogo(this.id)">
+												</td>
+												<td width="16%" bgcolor=#ffffff align="center"> <!--COLUNA 2-->
+													<img src="imagens/branco.png" width="40" height="50" id="4" onclick="Jogo(this.id)">
+												</td>
+												<td width="16%" bgcolor=#ffffff align="center"> <!--COLUNA 3-->
+													<img src="imagens/branco.png" width="40" height="50" id="5" onclick="Jogo(this.id)">
+												</td>
+											</tr>
+											<tr height="30%"> <!--LINHA 3-->
+												<td width="16%" bgcolor=#ffffff align="center"> <!--COLUNA 1-->
+													<img src="imagens/branco.png" width="40" height="50" id="6" onclick="Jogo(this.id)">
+												</td>
+												<td width="16%" bgcolor=#ffffff align="center"> <!--COLUNA 2-->
+													<img src="imagens/branco.png" width="40" height="50" id="7" onclick="Jogo(this.id)"> 
+												</td>
+												<td width="16%" bgcolor=#ffffff align="center"><!--COLUNA 3-->
+													<img src="imagens/branco.png" width="40" height="50" id="8" onclick="Jogo(this.id)">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr height="70%">
+						<td align="center"  > <!-- botoes do menu-->
+							<table width="100%" height="100%" >
+								<tr height="20%">
+									<td align="center">
+										<input type="button" value="Reiniciar" id="tamanhoBotao" onclick="Reiniciar()"><!--BOTÃO REINICIAR-->
+									</td>
+								</tr>
+								<tr height="10%">
+									<td align="center">
+										<p>
+											<p> <font color="red"> Jogador vs Jogador </font></p>
+										</p>
+										<p>
+											<input type="button" value="jogar " id="tamanhoBotao" onclick="JvsJ()"> <!--BOTÃO PARA JOGAR COM AMIGO-->
+										</p>
+										
+									</td>
+								</tr>
+								<tr height="10%">
+									<td align="center">
+										<p> <font color="red">Jogador vs Computador</font></p>
+									</td>
+								</tr>
+								<tr height="60%">
+									<td align="center">	
+										<p>
+											<input type="button" value="Facil" id="tamanhoBotao" onclick="facilJogo()"><!--BOTÃO FACIL-->
+										</p>
+										<p>
+											<input type="button" value="Intermediario" id="tamanhoBotao" onclick="medioJogo()"><!--BOTÃO INTERMEDIARIO-->
+										</p>
+										<p>
+											<input type="button" value="Dificil" id="tamanhoBotao" onclick="dificilJogo()()"><!--BOTÃO DIFICIL-->
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>	
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</html>
